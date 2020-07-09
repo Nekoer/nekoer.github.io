@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Hcyacg Api文档</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-	search: {
-            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-            noData: '找不到结果',//搜索不到结果时显示
-            paths: 'auto',//自动
-            placeholder: '搜索',//搜索框提示
-        },
-	coverpage: {
-            coverpage: true,
-            '/': '_coverpage.md'
-        },
-    onlyCover: true,
-    name: 'Hcyacg Api',
-    repo: 'nekoer.github.io',
-    loadSidebar: true,
-    subMaxLevel: 4,
-    coverpage: true,
-    pagination: {
-  	  previousText: '上一章节',
-  	  nextText: '下一章节'
-	}
-    }
-  </script>
-  
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hcyacg Api文档</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- <meta name="description" content="Description"> -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.10.2/themes/vue.css">
+	</head>
+	<body>
+		<div id="app"></div>
+		<script>
+			window.$docsify = {
+				search: {
+					maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+					noData: '找不到结果', //搜索不到结果时显示
+					paths: 'auto', //自动
+					placeholder: '搜索', //搜索框提示
+				},
+				onlyCover: true,
+				name: 'Hcyacg Api',
+				repo: '',
+				loadSidebar: true,
+				subMaxLevel: 4,
+				coverpage: true,
+				pagination: {
+					previousText: '上一章节',
+					nextText: '下一章节',
+				},
+				mergeNavbar:true,
+				requestHeaders: {
+				    'cache-control': 'max-age=600',
+				},
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/docsify@4.10.2/lib/docsify.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+		<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+		
+		<script src="//unpkg.com/docsify-copy-code"></script>
+		<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+		<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+		<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+		<script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
+		<script src="//unpkg.com/prismjs/components/prism-http.min.js"></script>
+		<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+		<script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
+		<script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>
+		<script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
+		<!-- <script src="//cdn.jsdelivr.net/npm/echarts@latest/dist/echarts.min.js"></script> -->
+		<!-- <script src="//cdn.jsdelivr.net/npm/docsify-echarts-plugin/lib/index.min.js"></script> -->
+	</body>
 </html>
