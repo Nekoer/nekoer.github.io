@@ -10,7 +10,7 @@ GET `https://api.pixiv.hcyacg.com/public/search`
 
 
 ### 请求参数案例
-`[](https://api.pixiv.hcyacg.com/public/search?q=xxx&offset=30`
+`https://api.pixiv.hcyacg.com/public/search?q=xxx&offset=30`
 
 ### 返回结果
 ```json
