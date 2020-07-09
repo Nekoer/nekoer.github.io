@@ -10,7 +10,7 @@ GET `https://api.pixiv.hcyacg.com/public/setu`
 
 
 ### 请求参数案例
-`[](https://api.pixiv.hcyacg.com/public/setu?page=1&perPage=30`
+`https://api.pixiv.hcyacg.com/public/setu?page=1&perPage=30`
 
 ### 返回结果
 ```json
