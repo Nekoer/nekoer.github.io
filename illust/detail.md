@@ -7,7 +7,15 @@ GET `https://api.pixiv.hcyacg.com/illust/detail`
 | 字段  | 类型  | 描述  |
 | :------------: | :------------: | :------------: |
 | illustId  |  String |  插画id |
+|authorization | String| 用户token|
 
 
 ### 请求参数案例
-`https://api.pixiv.hcyacg.com/illust/detail?illustId=59580629`
+```http
+https://api.pixiv.hcyacg.com/illust/detail?illustId=59580629
+```
+
+```http
+在头部添加
+{authorization:token}
+```
