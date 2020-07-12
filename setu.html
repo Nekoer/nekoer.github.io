@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>setu statistics</title>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/v-charts/lib/index.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-charts/lib/style.min.css">
+		<style>
+			html,
+			body {
+				margin: 0;
+				padding: 0
+			}
+		</style>
+	</head>
+	<body>
+		<div class="chart-container" style="position:relative;height:300px;width:100%">
+			<canvas id="setu-statistics"></canvas>
+		</div>
+	</body>
+	<script>
+		fetch("https://api.pixiv.hcyacg.com/system/logs").then(response => response.json()).then(data => {
+			const labels = [],
+				dataPoints = [];
+			for (const ymd in data.data) {
+				const search = /([0-9]{4})([0-9]{2})([0-9]{2})/.exec(ymd);
+				search && (labels.push(`${search[2]}-${search[3]}`), dataPoints.push({
+					x: new Date(search[1], search[2] - 1, search[3]).getTime(),
+					y: data.data[ymd]
+				}))
+			}
+			new Chart(document.getElementById("setu-statistics"), {
+				type: "line",
+				data: {
+					labels: labels,
+					datasets: [{
+						label: "调用量",
+						data: dataPoints
+					}]
+				},
+				options: {
+					maintainAspectRatio: !1,
+					tooltips: {
+						intersect: !1,
+						displayColors: !1
+					},
+					elements: {
+						point: {
+							radius: 4,
+							backgroundColor: "#369EAD",
+							borderColor: "transparent",
+							hoverRadius: 6,
+							hitRadius: 20
+						},
+						line: {
+							borderWidth: 2,
+							borderColor: "#369EADAA",
+							backgroundColor: "#369EAD33"
+						}
+					},
+					legend: {
+						display: !1
+					},
+					scales: {
+						yAxes: [{
+							ticks: {
+								beginAtZero: !0,
+								callback: v => v >= 1e3 ? `${v/1e3}k` : v
+							}
+						}]
+					}
+				}
+			})
+		});
+		
+		
+	</script>
+</html>
