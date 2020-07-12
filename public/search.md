@@ -6,7 +6,7 @@ GET `https://api.pixiv.hcyacg.com/public/search`
 | 字段  | 类型  | 描述  |
 | :------------: | :------------: | :------------: |
 | q  | String  | 搜索词  |
-| offset  |  String |  显示数量 以倍数呈现 |
+| offset  |  Integer |  显示数量 以倍数呈现 |
 
 
 ### 请求参数案例
