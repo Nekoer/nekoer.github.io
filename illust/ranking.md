@@ -4,8 +4,8 @@ GET ` https://api.pixiv.hcyacg.com/illust/ranking`
 | 字段  | 类型  | 描述  |
 | :------------: | :------------: | :------------: |
 | mode  |  String |  模式 |
-| date  |  String | 日期 例：2020-04-13  |
-| offset  | String  | (n-1)*30  |
+| date  |  Date | 日期 例：2020-04-13  |
+| offset  | Integer  | (n-1)*30  |
 
 #### mode字段
 |  模式 | 描述  |
