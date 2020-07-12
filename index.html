@@ -22,22 +22,40 @@
 				name: 'Hcyacg Api',
 				repo: '',
 				loadSidebar: true,
+				echartsTheme: {
+					categoryAxis: {
+						axisLine: {
+							show: false
+						},
+						axisTick: {
+							show: false
+						},
+						splitLine: {
+							show: false
+						}
+					},
+					valueAxis: {
+						axisLine: {
+							show: false
+						}
+					}
+				}
 				subMaxLevel: 4,
 				coverpage: true,
 				pagination: {
 					previousText: '上一章节',
 					nextText: '下一章节',
 				},
-				mergeNavbar:true,
+				mergeNavbar: true,
 				requestHeaders: {
-				    'cache-control': 'max-age=600',
+					'cache-control': 'max-age=600',
 				},
 			}
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/docsify@4.10.2/lib/docsify.min.js"></script>
 		<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 		<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-		
+
 		<script src="//unpkg.com/docsify-copy-code"></script>
 		<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
 		<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
