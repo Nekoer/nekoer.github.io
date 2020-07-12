@@ -14,5 +14,5 @@ ip无需添加到header头部信息，接口会自动获取。
 
 
 ## 图库数量和近期成功调用统计
-[filename](../setu.html ':include :type=iframe width=100% height=470px')
+[filename](../setu.html ':include :type=iframe width=100% height=490px')
 
