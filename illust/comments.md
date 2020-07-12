@@ -6,7 +6,7 @@ GET `https://api.pixiv.hcyacg.com/illust/comments`
 ### 请求参数
 | 字段  | 类型  | 描述  |
 | :------------: | :------------: | :------------: |
-| illustId  |  String |  插画id |
+| illustId  |  Integer |  插画id |
 
 
 ### 请求参数案例
