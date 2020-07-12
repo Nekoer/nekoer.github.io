@@ -7,8 +7,8 @@ GET `https://api.pixiv.hcyacg.com/public/ranking`
 | :------------: | :------------: | :------------: |
 | ranking_type  | String  | 排行榜类别  |
 | mode  |  String |  模式 |
-| page  |  String | 起始页面  |
-| per_page  | String  | 每个页面的数据数量  |
+| page  |  Integer | 起始页面  |
+| per_page  | Integer  | 每个页面的数据数量  |
 | date  | String  | 日期 例：2020-04-13  |
 
 #### ranking_type字段
