@@ -10,6 +10,8 @@
 		<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/v-charts/lib/index.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-charts/lib/style.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.10.2/themes/vue.css">
+
 		<style>
 			html,
 			body {
@@ -19,12 +21,35 @@
 		</style>
 	</head>
 	<body>
+		<article id="main" class="markdown-section">
+			<table style="position: relative;margin-left: 25%;">
+				<thead>
+					<tr>
+						<th align="center">总数</th>
+						<th align="center">R18插画</th>
+						<th align="center">插画</th>
+						<th align="center">漫画</th>
+						<th align="center">动图</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td align="center"><code>{{all}}</code></td>
+						<td align="center"><code>{{r18}}</code></td>
+						<td align="center"><code>{{illustrator}}</code></td>
+						<td align="center"><code>{{manga}}</code></td>
+						<td align="center"><code>{{ugoira}}</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
 		<div class="chart-container" style="position:relative;height:300px;width:100%">
 			<canvas id="setu-statistics"></canvas>
 		</div>
 	</body>
+	<script src="//unpkg.com/axios/dist/axios.min.js"></script>
 	<script>
-		fetch("https://api.pixiv.hcyacg.com/system/logs").then(response => response.json()).then(data => {
+		fetch("http://localhost:7777/system/logs").then(response => response.json()).then(data => {
 			const labels = [],
 				dataPoints = [];
 			for (const ymd in data.data) {
@@ -78,6 +103,41 @@
 			})
 		});
 		
+		new Vue({
+		  el: '#main',
+		  data() {
+		  	return {
+					all:0,
+					r18:0,
+					illustrator:0,
+					manga:0,
+					ugoira:0,
+		  	}
+		  },
+			created() {
 		
+			},
+			mounted() {
+				this.getPicNumber()
+			},
+			methods:{
+				getPicNumber: function(){
+					// 发送 POST 请求
+					const that = this
+					 axios({
+					  method: 'get',
+					  url: 'http://localhost:7777/illust/picNumbers',
+					}).then(res => {
+						
+						that.all = res.data.data.all;
+						that.r18 = res.data.data.x18;
+						that.illustrator = res.data.data.illust;
+						that.manga = res.data.data.manga;
+						that.ugoira = res.data.data.ugoira;
+					});
+				}
+			}
+		})
 	</script>
+
 </html>
