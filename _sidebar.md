@@ -1,5 +1,4 @@
 - [令牌](public/token)
-- [调用统计](public/summary)
 - 公共接口
   - [排行榜](public/ranking)
   - [搜索](public/search)
