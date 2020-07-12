@@ -1,4 +1,4 @@
-```chart
+```echarts
 {
     "title": {
         "text": "某站点用户访问来源", 
