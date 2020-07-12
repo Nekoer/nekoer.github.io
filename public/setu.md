@@ -8,6 +8,8 @@ GET `https://api.pixiv.hcyacg.com/public/setu`
 | page  | Integer  | 第几页  |
 | perPage  |  Integer |  当页显示数量 |
 
+### 注意事项
+该接口需要传送authorization，并且确认您的账号拥有18X的观阅权限
 
 ### 请求参数案例
 `https://api.pixiv.hcyacg.com/public/setu?page=1&perPage=30`
