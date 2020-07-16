@@ -1,5 +1,5 @@
 ## 排行榜
-GET ` https://api.pixiv.hcyacg.com/illust/ranking`
+GET ` https://api.pixiv.hcyacg.com/illusts/ranking`
 ### 请求参数
 | 字段  | 类型  | 描述  |
 | :------------: | :------------: | :------------: |
@@ -20,4 +20,4 @@ GET ` https://api.pixiv.hcyacg.com/illust/ranking`
 |  day_manga | 每日漫画  |
 
 ### 请求参数案例
-`https://api.pixiv.hcyacg.com/illust/ranking?mode=day&date=2020-05-13`
+`https://api.pixiv.hcyacg.com/illusts/ranking?mode=day&date=2020-05-13`
