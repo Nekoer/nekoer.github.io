@@ -1,7 +1,7 @@
 
 ## 详细数据
 
-GET `https://api.pixiv.hcyacg.com/illust/detail`
+GET `https://api.pixiv.hcyacg.com/illusts/detail`
 
 ### 请求参数
 | 字段  | 类型  | 描述  |
@@ -12,7 +12,7 @@ GET `https://api.pixiv.hcyacg.com/illust/detail`
 
 ### 请求参数案例
 ```http
-https://api.pixiv.hcyacg.com/illust/detail?illustId=59580629
+https://api.pixiv.hcyacg.com/illusts/detail?illustId=59580629
 ```
 
 ```http
