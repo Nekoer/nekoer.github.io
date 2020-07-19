@@ -17,5 +17,5 @@ https://api.pixiv.hcyacg.com/illusts/detail?illustId=59580629
 
 ```http
 在头部添加
-{authorization:用户token,不是APIKEY}
+{authorization:用户token,不是APIKEY} 用于获取有趣的图
 ```
