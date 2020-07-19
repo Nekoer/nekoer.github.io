@@ -7,7 +7,7 @@ GET `https://api.pixiv.hcyacg.com/illusts/detail`
 | 字段  | 类型  | 描述  |
 | :------------: | :------------: | :------------: |
 | illustId  |  Integer |  插画id |
-|authorization | String| 用户token|
+|reduction | boolean| true则返回pixiv原始数据，否则默认返回本站数据|
 
 
 ### 请求参数案例
