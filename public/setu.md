@@ -1,12 +1,12 @@
 ## 有趣的图
 
-GET `https://api.pixiv.hcyacg.com/public/setu`
+GET `https://api.acg-gov.com/public/setu`
 
 
 
 
 ### 请求参数案例
-`https://api.pixiv.hcyacg.com/public/setu`
+`https://api.acg-gov.com/public/setu`
 
 ### 返回结果
 ```json
