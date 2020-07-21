@@ -1,6 +1,6 @@
 ## 排行榜
 
-GET `https://api.pixiv.hcyacg.com/public/ranking`
+GET `https://api.acg-gov.com/public/ranking`
 
 ### 请求参数
 | 字段  | 类型  | 描述  |
@@ -36,7 +36,7 @@ GET `https://api.pixiv.hcyacg.com/public/ranking`
 | r18g  | 工口加强型（猎奇）  |
 
 ### 请求参数案例
-`https://api.pixiv.hcyacg.com/public/ranking?ranking_type=illust&mode=daily&date=2020-04-13&per_page=50&page=1`
+`https://api.acg-gov.com/public/ranking?ranking_type=illust&mode=daily&date=2020-04-13&per_page=50&page=1`
 
 ### 返回结果
 ```json
