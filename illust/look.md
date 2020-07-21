@@ -1,7 +1,7 @@
 
 ## 查看插画高清图
 
-GET `https://api.pixiv.hcyacg.com/illusts/urlLook`
+GET `https://api.acg-gov.com/illusts/urlLook`
 
 ### 请求参数
 | 字段  | 类型  | 描述  |
@@ -11,4 +11,4 @@ GET `https://api.pixiv.hcyacg.com/illusts/urlLook`
 
 
 ### 请求参数案例
-`https://api.pixiv.hcyacg.com/illusts/urlLook?url=xxx&cache=true`
+`https://api.acg-gov.com/illusts/urlLook?url=xxx&cache=true`
