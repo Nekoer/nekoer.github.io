@@ -1,6 +1,6 @@
 ## 搜索作者
 
-GET `[](https://api.acg-gov.com/public/search/users?word=%E7%99%BE%E5%90%88&offset=30)`
+GET `https://api.acg-gov.com/public/search/users?word=%E7%99%BE%E5%90%88&offset=30`
 
 ### 请求参数
 | 字段  | 类型  | 描述  |
@@ -10,7 +10,7 @@ GET `[](https://api.acg-gov.com/public/search/users?word=%E7%99%BE%E5%90%88&offs
 
 
 ### 请求参数案例
-`[](https://api.acg-gov.com/public/search/users?word=百合&offset=30)`
+`https://api.acg-gov.com/public/search/users?word=百合&offset=30`
 
 ### 返回结果
 ```json
