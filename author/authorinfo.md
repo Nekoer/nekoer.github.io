@@ -1,4 +1,4 @@
-## 搜索作者
+## 作者信息
 
 GET `https://api.acg-gov.com/public/search/users/details?id=xxx`
 
