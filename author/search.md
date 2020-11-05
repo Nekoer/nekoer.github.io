@@ -1,6 +1,6 @@
 ## 搜索作者
 
-GET `https://api.acg-gov.com/public/search/users?word=%E7%99%BE%E5%90%88&offset=30`
+GET `https://api.acg-gov.com/public/search/users?word=xxx&offset=30`
 
 ### 请求参数
 | 字段  | 类型  | 描述  |
