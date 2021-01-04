@@ -1,12 +1,12 @@
 ## 有趣的图
 
-GET `https://api.acg-gov.com/public/setu`
+GET `https://api.acgmx.com/public/setu`
 
 
 
 
 ### 请求参数案例
-`https://api.acg-gov.com/public/setu`
+`https://api.acgmx.com/public/setu`
 
 ### 返回结果
 ```json
@@ -31,12 +31,12 @@ GET `https://api.acg-gov.com/public/setu`
 		"visible": "true",
 		"isMuted": "false",
 		"totalComments": "27",
-		"large": "https://image.acg-gov.com/thumb/82966296.jpg",
+		"large": "https://image.acgmx.com/thumb/82966296.jpg",
 		"user": {
 			"id": "50258193",
 			"name": "逆流茶会",
 			"account": "nlch",
-			"profileImageUrls": "https://image.acg-gov.com/avatar/82092715.jpg",
+			"profileImageUrls": "https://image.acgmx.com/avatar/82092715.jpg",
 			"isFollowed": "false"
 		},
 		"tags": [{
@@ -61,11 +61,11 @@ GET `https://api.acg-gov.com/public/setu`
 			"name": "貝合わせ"
 		}],
 		"originals": [{
-			"url": "https://image.acg-gov.com/original/82966296_0_1594840787684.jpg"
+			"url": "https://image.acgmx.com/original/82966296_0_1594840787684.jpg"
 		}, {
-			"url": "https://image.acg-gov.com/original/82966296_1_1594840797865.jpg"
+			"url": "https://image.acgmx.com/original/82966296_1_1594840797865.jpg"
 		}, {
-			"url": "https://image.acg-gov.com/original/82966296_2_1594840802555.jpg"
+			"url": "https://image.acgmx.com/original/82966296_2_1594840802555.jpg"
 		}]
 	}
 }
