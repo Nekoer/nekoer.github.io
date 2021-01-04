@@ -1,6 +1,6 @@
 ## 作者信息
 
-GET `https://api.acg-gov.com/public/search/users/details?id=xxx`
+GET `https://api.acgmx.com/public/search/users/details?id=xxx`
 
 ### 请求参数
 | 字段  | 类型  | 描述  |
@@ -9,7 +9,7 @@ GET `https://api.acg-gov.com/public/search/users/details?id=xxx`
 
 
 ### 请求参数案例
-`https://api.acg-gov.com/public/search/users/details?id=2188232`
+`https://api.acgmx.com/public/search/users/details?id=2188232`
 
 ### 返回结果
 ```json
