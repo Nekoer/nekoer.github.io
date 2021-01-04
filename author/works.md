@@ -1,6 +1,6 @@
 ## 作者作品
 
-GET `https://api.acg-gov.com/public/search/users/illusts?id=xxx&offset=30`
+GET `https://api.acgmx.com/public/search/users/illusts?id=xxx&offset=30`
 
 ### 请求参数
 | 字段  | 类型  | 描述  |
@@ -9,7 +9,7 @@ GET `https://api.acg-gov.com/public/search/users/illusts?id=xxx&offset=30`
 | offset  | Integer  | 30\60\90\120...  |
 
 ### 请求参数案例
-`https://api.acg-gov.com/public/search/users/illusts?id=2188232&offset=30`
+`https://api.acgmx.com/public/search/users/illusts?id=2188232&offset=30`
 
 ### 返回结果
 ```json
