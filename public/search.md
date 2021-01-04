@@ -1,6 +1,6 @@
 ## 搜索
 
-GET `https://api.acg-gov.com/public/search`
+GET `https://api.acgmx.com/public/search`
 
 ### 请求参数
 | 字段  | 类型  | 描述  |
@@ -10,7 +10,7 @@ GET `https://api.acg-gov.com/public/search`
 
 
 ### 请求参数案例
-`https://api.acg-gov.com/public/search?q=xxx&offset=30`
+`https://api.acgmx.com/public/search?q=xxx&offset=30`
 
 ### 返回结果
 ```json
