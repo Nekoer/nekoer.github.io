@@ -49,7 +49,7 @@
 	</body>
 	<script src="//unpkg.com/axios/dist/axios.min.js"></script>
 	<script>
-		fetch("https://api.acg-gov.com/systems/logs").then(response => response.json()).then(data => {
+		fetch("https://api.acgmx.com/systems/logs").then(response => response.json()).then(data => {
 			const labels = [],
 				dataPoints = [];
 			for (const ymd in data.data) {
@@ -126,7 +126,7 @@
 					const that = this
 					 axios({
 					  method: 'get',
-					  url: 'https://api.acg-gov.com/illusts/picNumbers',
+					  url: 'https://api.acgmx.com/illusts/picNumbers',
 					}).then(res => {
 						
 						that.all = res.data.data.all;
