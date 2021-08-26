@@ -5,7 +5,7 @@
 | ip  | 1  | 10  |
 | 无ip/公共调用  | 1  | 1  |
 
-token请添加在header头部信息中，key为token。
+token请添加在header头部信息中，key为token.
 
 ip无需添加到header头部信息，接口会自动获取。
 
